@@ -1,0 +1,20 @@
+<script language="javascript">
+function LocalizarIP_done(ip_data){
+  if(!ip_data['error']) //YOUR CODE GOES HERE
+    alert('Localizei IP: '+ip_data['city']+'-'+ip_data['state']+ip_data['coutry']+' (lat:'+ip_data['latitude'+',long:'+ip_data['longitude']+')');
+}</script>
+<script src="geolocation.js.php?domain=[seu-site.com]&token=[token]"></script> 
+
+
+Utilizando a API você terá acesso aos seguintes campos com informações do visitante:
+ip_data["ip"]: Endereço IP utilizado pelo visitante
+ip_data["reverseIP"]: Endereço IP Reverso
+ip_data["city"]: Cidade do visitante
+ip_data["state"]: Estado do visitante
+ip_data["country"]: País do visitante
+ip_data["countryCode"]: Código do País com duas letras (ex: BR)
+ip_data["latitude"]: Latitude da Geolocalização do visitante
+ip_data["longitude"]: Longitude da Geolocalização do visitante
+ip_data["provider"]: Nome do Provedor de Internet usado pelo visitante
+ip_data["errorCode"]: Código de erro, em caso de problemas.
+ip_data["errorMsg"]: Mensagem de erro, em caso de problemas.
