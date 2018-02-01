@@ -1,2 +1,2 @@
-# Localiza-o-API
-api de localização
+# Localização-API
+API de localização
